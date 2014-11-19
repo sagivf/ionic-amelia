@@ -1,7 +1,7 @@
 Ionic Framework
 =============
 
-[Start the presentation](http://sagivf.github.io/keynote-ionic)
+[Start the presentation](http://sagivf.github.io/ionic-amelia)
 
 Additional links.
 
