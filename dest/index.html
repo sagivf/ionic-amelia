@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <meta charset="utf-8">
+  <title>ionic Framework</title>
+  <meta name="description" content="Famo.us is a free, open source JavaScript framework that helps you create smooth, complex UIs for any screen">
+  <meta name="author" content="Avi Haiat">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="lib/css/font-awesome.css">
+  <link rel="stylesheet" href="css/reveal.min.css">
+  <link id="theme" rel="stylesheet" href="css/theme/default.css"><!--
+  <For>syntax highlighting</For>-->
+  <link rel="stylesheet" href="lib/css/zenburn.css"><!--
+  <If>the query includes 'print-pdf', include the PDF print sheet</If>-->
+  <script>
+    if(window.location.search.match(/print-pdf/gi)) {
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = 'css/print/pdf.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+    }
+  </script><!--[if lt IE 9]>
+  <script src="lib/js/html5shiv.js"></script><![endif]-->
+  <body>
+    <div class="reveal">
+      <div class="footer-logos"><a href="http://yoobic.com" style="position: relative; top: 35px; left: 28px;"><img src="img/amelia.png" class="ts no-border"></a><a href="http://ionicframework.com/" style="position: relative; left: -100px;"><img id="ionic-logo" src="img/logo-ionic-white.png" class="ionic no-border"></a><a href="http://angularjs.org" style="position: relative; left: -100px;"><img src="img/angularjs.svg" class="angularjs no-border"></a></div><!--
+      <Any>section element inside of this container is displayed as a slide </Any>-->
+      <div class="slides">
+        <section>
+          <h2>ionic framework</h2>
+          <p>The beautiful open source framework for developing hybrid mobile apps with HTML5</p><a href="http://disrupt.famo.us/periodic402/"><img src="img/logo-ionic-white.png" style="width: 250px; margin-top: 45px;" class="no-border"></a>
+          <p style="margin-top: 100px;"><small>Presented by<br><a href="http://thaiat.github.io">Avi  Haiat</a>-<a href="mailto:thaiat@yoobic.com">thaiat@yoobic.com</a></small></p>
+          <aside class="notes">Notes:</aside>
+        </section>
+      </div>
+    </div>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+    <script>
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
+      slideNumber: false,
+      theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+      transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+      // Parallax scrolling
+      // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+      // parallaxBackgroundSize: '2100px 900px',
+      // Optional libraries used to extend on reveal.js
+      dependencies: [{
+      src: 'lib/js/classList.js',
+      condition: function() {
+      return !document.body.classList;
+      }
+      }, {
+      src: 'plugin/markdown/marked.js',
+      condition: function() {
+      return !!document.querySelector('[data-markdown]');
+      }
+      }, {
+      src: 'plugin/markdown/markdown.js',
+      condition: function() {
+      return !!document.querySelector('[data-markdown]');
+      }
+      }, {
+      src: 'plugin/highlight/highlight.js',
+      async: true,
+      callback: function() {
+      hljs.initHighlightingOnLoad();
+      }
+      }, {
+      src: 'plugin/zoom-js/zoom.js',
+      async: true,
+      condition: function() {
+      return !!document.body.classList;
+      }
+      }, {
+      src: 'plugin/notes/notes.js',
+      async: true,
+      condition: function() {
+      return !!document.body.classList;
+      }
+      }]
+      });
+    </script>
+  </body>
+</head>

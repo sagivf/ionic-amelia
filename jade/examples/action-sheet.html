@@ -1,0 +1,24 @@
+<h2>Action Sheet</h2>
+<div class='row slide-content'>
+  <div class="col-xs-3">
+    <img class="no-border" src="https://cloud.githubusercontent.com/assets/4806944/4853269/45f98f34-6084-11e4-922e-6b194e62db87.png" style="position:relative;left:-100px" alt="" width=250 height=500>
+  </div>
+  <div class="col-xs-9">
+  <pre><code  scontenteditable data-trim style="word-wrap:break-word;word-break:break-word;">
+$ionicActionSheet.show({
+  titleText: 'Modify your album',
+  buttons: [{
+    text: 'Share'
+  }, {
+    text: 'Move'
+  }],
+  destructiveText: 'Delete',
+  cancelText: 'Cancel',
+  buttonClicked: function(index) {
+    console.log('BUTTON CLICKED', index);
+    return true;
+  }
+});
+  </code></pre>
+  </div>
+</div>

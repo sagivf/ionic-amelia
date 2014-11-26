@@ -1,0 +1,86 @@
+!!! 5
+html(lang='en')
+head
+  meta(charset='utf-8')
+  title Ionic Amelia
+  meta(name='description', content='Famo.us is a free, open source JavaScript framework that helps you create smooth, complex UIs for any screen')
+  meta(name='author', content='Avi Haiat')
+  meta(name='apple-mobile-web-app-capable', content='yes')
+  meta(name='apple-mobile-web-app-status-bar-style', content='black-translucent')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+  link(rel='stylesheet', href='lib/bootstrap/bootstrap.min.css')
+  link(rel='stylesheet', href='lib/css/font-awesome.css')
+  link(rel='stylesheet', href='css/reveal.min.css')
+  link#theme(rel='stylesheet', href='css/theme/default.css')
+
+  //
+     For syntax highlighting
+  link(rel='stylesheet', href='lib/css/zenburn.css')
+  //
+     If the query includes 'print-pdf', include the PDF print sheet
+  script
+    if(window.location.search.match(/print-pdf/gi)) {
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = 'css/print/pdf.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+    }
+  body
+    .reveal
+      .slides
+        section
+          include ./ionic-amelia
+        section
+          section.yoobic
+            include ./what-is-amelia
+          section(data-state='api-home')
+          section(data-state='api-auth')
+        section
+          include ./platforms
+        section(data-state='facebook')
+          include ./facebook
+        section(data-state='obama')
+        section(data-state='louis')
+        section
+          include ./2012
+        section
+          section
+            include ./competitors
+          section
+            include ./fame-us
+        section
+          include ./ionic/what-is-1
+        section
+          include ./ionic/what-is-2
+        section
+          include ./ionic/angularjs
+        section
+          include ./ionic/sass
+        section
+          include ./ionic/performance
+        section
+          include ./ionic/native-focused
+        section
+          include ./examples/lists.html
+        section
+          include ./examples/complex-lists.html
+        section
+          include ./examples/tabs.html
+        section
+          include ./examples/navigation.html
+        section
+          include ./examples/slide-menu.html
+        section
+          include ./examples/slide-box.html
+        section
+          include ./examples/action-sheet.html
+        section
+          include ./examples/pull-refresh.html
+        section
+          include ./get-started.html
+        section(data-state='boring')
+          p(style='margin-top:770px;color:white;text-shadow:2px 2px 2px #000000;font-weight:bolder') This is boooring... Show me the code
+    script(src='lib/js/head.min.js')
+    script(src='js/reveal.min.js')
+    script(src='js/config.js')

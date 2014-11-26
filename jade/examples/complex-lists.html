@@ -1,0 +1,27 @@
+<h2>Complex Lists</h2>
+<div class='row slide-content'>
+  <div class="col-xs-3">
+    <img class="no-border" src="https://cloud.githubusercontent.com/assets/4806944/4852203/562d7394-6079-11e4-8d83-6fd4a1f08738.png" style="position:relative;left:-100px" alt="" width=250 height=500>
+  </div>
+  <div class="col-xs-9">
+    <ul>
+      <li>angularjs directive</li>
+      <li>buttons exposes by swiping</li>
+      <li>Reorder / Delete</li>
+
+    </ul>
+    <pre><code scontenteditable style="word-wrap:break-word;word-break:break-word;">
+<ion-list>
+  <ion-item ng-repeat="item in items"
+            option-buttons="buttons"
+            class="item-thumbnail-left">
+
+    <img ng-src="{{ item.pic }}">
+    <h2>{{ item.name }}</h2>
+    <p>{{ item.quote }}</p>
+
+  </ion-item>
+</ion-list>
+    </code></pre>
+  </div>
+</div>

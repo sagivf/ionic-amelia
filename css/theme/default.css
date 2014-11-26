@@ -203,6 +203,22 @@
     background-color:black;
     background-repeat: no-repeat;
 }
+.api-home body {
+    background:url("/img/api-home.png");
+    padding-top: 100px;
+    background-position:center;
+    background-size: 100%;
+    background-color:black;
+    background-repeat: no-repeat;
+}
+.api-auth body {
+    background:url("/img/authapi.png");
+    padding-top: 100px;
+    background-position:center;
+    background-size: 100%;
+    background-color:black;
+    background-repeat: no-repeat;
+}
 .louis body {
     background:url("http://i.giphy.com/8mZK9do4ZvxQc.gif");
     background-position:center;
