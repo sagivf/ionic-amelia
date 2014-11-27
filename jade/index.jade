@@ -31,11 +31,8 @@ head
       .slides
         section
           include ./ionic-amelia
-        section
-          section.yoobic
-            include ./what-is-amelia
-          section(data-state='api-home')
-          section(data-state='api-auth')
+        section.yoobic
+          include ./what-is-amelia
         section
           include ./platforms
         section(data-state='facebook')
@@ -83,6 +80,8 @@ head
           include ./get-started.html
         section(data-state='boring')
           div(style='position: fixed; bottom: -150px; left: 50%; margin-left: -300px; color:white;text-shadow:2px 2px 2px #000000;font-weight:bolder') This is boooring... Show me the code
+        section
+          include ./ionic/ways-to-develop
     script(src='lib/js/head.min.js')
     script(src='js/reveal.min.js')
     script(src='js/config.js')
